@@ -9,3 +9,8 @@ o=$((c+a/b))
 echo $o
 p=$((a%b+c))
 echo $p
+res[0]=$m
+res[1]=$n
+res[2]=$o
+res[3]=$p
+echo ${!res[@]}

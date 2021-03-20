@@ -14,3 +14,5 @@ res[1]=$n
 res[2]=$o
 res[3]=$p
 echo ${!res[@]}
+echo ${res[@]}
+

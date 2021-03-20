@@ -5,3 +5,5 @@ m=$((a+b*c))
 echo $m
 n=$((a*b+c))
 echo $n
+o=$((c+a/b))
+echo $o

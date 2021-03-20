@@ -7,3 +7,5 @@ n=$((a*b+c))
 echo $n
 o=$((c+a/b))
 echo $o
+p=$((a%b+c))
+echo $p

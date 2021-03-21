@@ -28,3 +28,17 @@ fi
 done
 done
 echo "Array After Sorting in Descending Order:- ${Array[@]}"
+
+for((i=0; i<4; i++))
+do
+for ((j=i+1; j<4; j++))
+do
+if [ ${Array[i]} -gt ${Array[$((j))]} ]
+then
+temp=${Array[i]}
+Array[$i]=${Array[$((j))]}
+Array[$((j))]=$temp
+fi
+done
+done
+echo "Array After Sorting in Ascending Order:- ${Array[@]}"
